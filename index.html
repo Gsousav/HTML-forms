@@ -5,76 +5,83 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML-forms</title>
+  <link rel="stylesheet" href="layout.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;700&family=Montserrat:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
 </head>
 <body>
+
   <form action="appacademyopne.com" method="post">
     <fieldset>
       <legend>Add user</legend>
+      <div class="basic-info-parent">
+        <div>
+          <label class="basic-info" for="firstName">First Name:</label>
+          <input type="text" name="first-name-input" id="firstName">
+        </div>
 
-      <div>
-        <label for="firstName">First Name</label>
-        <input type="text" name="first-name-input" id="firstName">
+        <div>
+          <label class="basic-info" for="lastName">Last Name:</label>
+          <input type="text" name="last-name-input" id="lastName">
+        </div>
+
+        <div>
+          <label class="basic-info" for="email">Email Address:</label>
+          <input type="email" name="email-address-input" id="email">
+        </div>
       </div>
 
-      <div>
-        <label for="lastName">Last Name</label>
-        <input type="text" name="last-name-input" id="lastName">
+      <div class="container date-and-status">
+        <div>
+          <label class="status" for="status">Status</label>
+          <br>
+          <select name="status-input" id="status">
+            <option value="student">Student</option>
+            <option value="teacher">Teacher</option>
+            <option value="Guest">Guest</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="date">Date</label>
+          <br>
+          <input type="date">
+        </div>
       </div>
 
-      <div>
-        <label for="email">Email Address</label>
-        <input type="email" name="email-address-input" id="email">
-      </div>
-
-      <div>
-        <label for="status">Status</label>
-        <select name="status-input" id="status">
-          <option value="student">Student</option>
-          <option value="teacher">Teacher</option>
-          <option value="Guest">Guest</option>
-        </select>
-      </div>
-
-      <div>
-        <p><strong>What's your favorite programming language?</strong></p>
-        <label for="HTML">HTML</label>
+      <div class="favorite-language-container">
+        <p>Choose your favorite language:</p>
+      <div class="favorite-language-radio-container">
         <input type="radio" name="favorite-language" id="HTML">
+        <label for="HTML">HTML</label>
 
-        <label for="CSS">CSS</label>
         <input type="radio" name="favorite-language" id="CSS">
+        <label for="CSS">CSS</label>
 
-        <label for="JS">JavaScript</label>
         <input type="radio" name="favorite-language" id="JS">
+        <label for="JS">JavaScript</label>
+      </div>
       </div>
 
-      <div>
-        <label for="date">Current Date</label>
-        <input type="date" name="date-input" id="date">
+      <div class="comments">
+        <label for="Comments">Comments:</label>
+        <textarea name="user-info" id="Comments" cols="30" rows="3"></textarea>
       </div>
 
-      <div>
-        <label for="AdditionalInfo">Additional Information</label>
-        <textarea name="user-info" id="AdditionalInfo" cols="30" rows="3"></textarea>
+      <div class = "checkbox-container">
+        <div class="checkbox-child">
+          <input type="checkbox" name="newsletter-checkbox" id="newsletter">
+          <label class="checkbox-text" for="newsletter">Sign up for news</label>
+        </div>
+
+        <div class="checkbox-child">
+          <input type="checkbox" name="terms-and-conditions-checkbox" id="termsAndConditions">
+          <label class="checkbox-text" for="termsAndConditions">Agree to terms</label>
+        </div>
       </div>
-
-      <br>
-
       <div>
-        <label for="newsletter"><strong>Sign up to our newsletter</strong></label>
-        <input type="checkbox" name="newsletter-checkbox" id="newsletter">
-      </div>
-
-      <br>
-
-      <div>
-        <label for="termsAndConditions"><strong>Agree to the terms and conditions</strong></label>
-        <input type="checkbox" name="terms-and-conditions-checkbox" id="termsAndConditions">
-      </div>
-
-      <br>
-
-      <div>
-        <button type="submit">Submit form</button>
+        <button type="submit">Submit</button>
       </div>
     </fieldset>
   </form>

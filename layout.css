@@ -1,0 +1,105 @@
+html {
+  font-family: Dosis, sans-serif;
+}
+
+form {
+  width: 43%;
+  margin: auto;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border: 1px solid #000;
+}
+
+.basic-info {
+  display: block;
+  text-align: center;
+}
+
+.basic-info-parent div input {
+  width: 200px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+fieldset legend {
+  border: 1px solid #000;
+}
+
+.basic-info-parent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+select, input[type="date"] {
+  height: 20px;
+  box-sizing: border-box;
+  width: 100px;
+}
+
+
+.favorite-language-radio-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5px
+}
+
+.favorite-language-container {
+  display: flex;
+  flex-direction: column;
+}
+
+p {
+  text-align: center;
+  font-size: 0.8em;
+}
+
+.comments {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+textarea {
+  width: 200px;
+  border-radius: 0;
+  resize: none;
+}
+
+.checkbox-container {
+  display: flex;
+  justify-content: center;
+}
+
+.checkbox-text {
+  font-size: 0.8em;
+  width: 50px;
+}
+
+.checkbox-child {
+  display: flex;
+  align-items: center;
+  gap: 2.5px;
+}
+
+/* Increase the size of the radio button */
+input[type="radio"] {
+  width: 20px;
+  height: 20px;
+}
+
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  border-radius: 0;
+}
