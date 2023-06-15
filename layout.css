@@ -12,6 +12,8 @@ fieldset {
   flex-direction: column;
   gap: 10px;
   border: 1px solid #000;
+  justify-content: center;
+  align-items: center;
 }
 
 .basic-info {
@@ -31,6 +33,7 @@ fieldset {
 
 fieldset legend {
   border: 1px solid #000;
+  margin-left: 78px;
 }
 
 .basic-info-parent {
@@ -102,4 +105,14 @@ input[type="checkbox"] {
   width: 20px;
   height: 20px;
   border-radius: 0;
+}
+
+
+/*styles for the button */
+
+button {
+  border-radius: 0;
+  border: 1px solid #000;
+  width: 100px;
+  background-color: #fff;
 }
